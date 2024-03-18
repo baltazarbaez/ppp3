@@ -1,0 +1,9 @@
+ /* mini-entorno para codigo css*/
+ .btn {
+    background: green;
+    color: aqua;
+}
+
+.fondo {
+    background-image: linear-gradient(to right, red, blue);/* colores en la pagina va degradando*/
+}
