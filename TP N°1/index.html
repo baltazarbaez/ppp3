@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico N°1</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand text-dark" href="#"><strong>T.P. N°1</strong></a>
+        </div>
+    </nav>
+
+    <div class="container mt-3 m-5">
+        <h1 class="fw-normal">Alta producto</h1>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label class="form-label">Descripción</label>
+                    <input type="text" class="form-control">
+                    <label class="form-label mt-2">Detalle</label>
+                    <textarea class="form-control mt-1" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" value="25.5" aria-label="Amount">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" placeholder="Precio de venta">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">N°</span>
+                            <input type="text" class="form-control" placeholder="Stock" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <select class="form-select">
+                            <option class="select disabled value" value="-1">Categoría</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-success" type="button">Guardar producto</button>
+
+                </div>            
+                
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="row">
+                    <div class="col mb-3">
+                        <label class="form-label">Fecha de alta</label>
+                        <input type="date" class="form-control">
+                    </div>
+
+                    <div class="col mb-3">
+                        <label class="form-label">Hora de alta</label>
+                        <input type="time" class="form-control ">
+                    </div>
+                </div>
+
+                <div class="text-center image-container mb-3">
+                    <img src="img/imagen2 para el TP1.png" class="rounded" alt="imagen bootstrap 5 new">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

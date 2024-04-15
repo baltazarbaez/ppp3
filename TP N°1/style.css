@@ -1,0 +1,6 @@
+.image-container {
+    border: 1px solid #eae8e8;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
