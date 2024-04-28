@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con boot...</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><strong>Mis pagos</strong></a>
+        </div>
+    </nav>
+
+   <div class="container mt-3 m-5">
+        <div class="row"style="width: 80%;">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-header">
+                            Carga de pago
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col">
+                            <label for="">Nombre</label>
+                            <input type="text" class="form-control mt-2" placeholder="Ingrese nombre">
+                            </div>
+                            <div class="col">
+                            <label for="">Apellido</label>
+                            <input type="text" class="form-control mt-2" placeholder="Ingrese apellido">
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-3">
+                            <div class="col">
+                                <label for="">DNI</label>
+                                <input type="number" class="form-control mt-2" placeholder="Ingrese dni">
+                            </div>
+                            <div class="col">
+                                <label for="">Correo</label>
+                                <input type="email" class="form-control mt-2" placeholder="Ingrese correo">
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-3">
+                            <div class="col">
+                                <label for="">Cuota</label>
+                                <input type="number" class="form-control mt-2" placeholder="Ingrese cuota">
+                            </div>
+                            <div class="col">
+                                <label for="">Importe</label>
+                                <input type="number" class="form-control mt-2" placeholder="Ingrese importe">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 mt-3">
+                            <label class="form-label">Fecha de pago</label>
+                            <input type="text" class="form-control mt-2" placeholder="Ingrese fecha">
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md">
+                            <button class="btn btn-success" type="button">Guardar pago</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            
+            <div class="card" style="width: 50rem;">
+                <div class="card-header">Grilla Pagos</div>
+            <div class="card-body">
+
+                <table class="table">
+                    <thead>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">DNI</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Cuota</th>
+                        <th scope="col">Importe</th>
+                        <th scope="col">Fecha</th>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                                <td>Alejo</td>
+                                <td>Martinez</td>
+                                <td>33292455</td>
+                                <td>alejomartinez@gmail.com</td>
+                                <td>8</td>
+                                <td>$12000</td>
+                                <td>01/02/2021</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Juan</td>
+                            <td>Perez</td>
+                            <td>44552784</td>
+                            <td>juanperez@gmail.com</td>
+                            <td>2</td>
+                            <td>$25000</td>
+                            <td>25/02/2021</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Antonio</td>
+                            <td>Fernandez</td>
+                            <td>30221144</td>
+                            <td>antoniofer@gmail.com</td>
+                            <td>11</td>
+                            <td>$45000</td>
+                            <td>05/11/2021</td>
+                        </tr>
+                    </tbody>
+                  </table>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
