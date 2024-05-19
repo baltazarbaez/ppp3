@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <select onchange="cambiar_label()" id="slt_operacion"><!--onchange cambia la funcion qeu se le diga-->
+        <option value="0">Opcion 1</option> <!-- cambiar dinamicamente el texto de label-->
+        <option value="1">Opcion 2</option>
+    </select>
+<br><br>
+    <label id="lbl_dato">Variable</label>
+    <input type="text" id="inp_dato">
+    <button id="btn_ejecutar">Aceptar</button>
+
+    <script src="funciones.js"></script>
+    <script src="arreglos.js"></script>
+    <script src="variables_constantes.js"></script>
+</body>
+</html>

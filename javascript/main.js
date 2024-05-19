@@ -13,7 +13,7 @@
     /**  const nombre =  document.getElementById("inp_nombre").value
       const apellido = document.getElementById("inp_apellido").value
 
-      const mensaje = nombre+', '+apellido*/
+      const mensaje = nombre+', '+apellido */
 
       //  console.log (mensaje)
 

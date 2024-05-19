@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Ley de Ohm</title>
+</head>
+<body>
+  <!--Barra navegacion/menu -->
+    <nav class="navbar navbar-dark bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand text-dark" href="index.html"><b>Ley de Ohm</b></a>
+        </div>
+    </nav>
+ 
+<div class="container ">
+  <div class="row">
+    <div class="col col-lg-6 mt-5 container-fluid">
+
+      <!--Seleccion -->
+            <div class="m-2">
+              <h3 class="text-light"><b>Calculadora Ley Ohm</b></h3>
+              <div class="col col-lg-6">
+                <label class="form-label text-light">Operacion</label>
+                <select class="form-select bg-light" onchange="cambiar_label()" id="ley_ohm">
+                  <option value="-1" selected disabled>Seleccione operacion</option> 
+                  <option value="0">Calcular Resistencia</option> 
+                  <option value="1">Calcular Intensidad</option>
+                  <option value="2">Calcular Tension</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="form-label text-warning">Ingrese los valores</label>
+            </div>
+
+            <!-- Ingresos de datos -->
+            <div class="row col-lg-6 m-2">
+              <label class="form-label text-light" id="lbl_dato1">Dato 1</label>
+              <input class="bg-light" type="number" id="inp_dato1">
+            </div>
+
+            <div class="row col-lg-6 m-2">
+              <label class="form-label text-light" id="lbl_dato2">Dato 2</label>
+              <input class="bg-light" type="number" id="inp_dato2">
+            </div>
+
+            <div class="button mt-3 m-2">
+              <button id="btn_ejecutar" class="btn btn-success"><b>Resultado</b></button>
+            </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- javascript -->
+<script src="main.js"></script>
+</body>
+</html>
