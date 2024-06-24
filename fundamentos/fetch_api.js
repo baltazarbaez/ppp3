@@ -8,7 +8,7 @@ const consumir_api = async () => {
     //necesita ser decl asi:
     const datos = await publicaciones.json()
 
-    datos.array.forEach(element => {
+    datos.forEach(element => {
         console.log(element.title)
     });
 }

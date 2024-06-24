@@ -4,18 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
-<body>
-    
+<body class="bg-dark">
+    <div class="container bg-info">
 
-    <select onchange="cambiar_label()" id="slt_operacion"><!--onchange cambia la funcion qeu se le diga-->
-        <option value="0">Opcion 1</option> <!-- cambiar dinamicamente el texto de label-->
-        <option value="1">Opcion 2</option>
-    </select>
-<br><br>
-    <label id="lbl_dato">Variable</label>
-    <input type="text" id="inp_dato">
-    <button id="btn_ejecutar">Aceptar</button>
+   
+   <nav class="navbar navbar-expand-lg bg-success" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Fundamentos</a>
+        </div>
+    </nav>
+    
+   <div class="container mt-3">
+        <select onchange="cambiar_label()" id="slt_operacion"><!--onchange cambia la funcion qeu se le diga-->
+            <option value="0">Opcion 1</option> <!-- cambiar dinamicamente el texto de label-->
+            <option value="1">Opcion 2</option>
+        </select>
+    <br><br>
+        <label id="lbl_dato">Variable</label>
+        <input type="text" id="inp_dato">
+        <button id="btn_ejecutar">Aceptar</button>
+    </div>
+     <div class="row">
+        <div class="col-lg-6 mt-3">
+            <ul id="list_users" class="list-group"> </ul>
+
+        </div>
+        <!-- api usuarios pero ahora trae en una tabla-->
+        <div class="col-lg-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Nombre</th>
+                        <th>Usuario</th>
+                        <th>Correo</th>
+                        <th>Sitio Web</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tb_users">
+
+
+                </tbody>
+            </table>
+
+        </div>
+     </div>
+
+        
+    
+    </div>
+ 
 
     <script src="funciones.js"></script>
     <script src="arreglos.js"></script>
@@ -25,6 +66,7 @@
     <script src="array_de_objetos.js"></script>
     <script src="funcion_flecha.js"></script>
     <script src="fetch_api.js"></script>
+    <script src="fetch_api_list.js"></script>
 
 
 </body>
