@@ -21,9 +21,7 @@ function calcular(d1,d2){
     if (select == 2){
         const resultado = d1 * d2
         return resultado
-    }
-
-   
+    } 
 }
 // Funcion cambia el texto del label segun select
 function cambiar_label(){
